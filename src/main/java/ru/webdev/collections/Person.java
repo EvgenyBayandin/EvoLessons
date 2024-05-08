@@ -14,4 +14,9 @@ public class Person {
         this.lastname = lastname;
         this.birthDay = birthDay;
     }
+
+    @Override
+    public String toString() {
+        return name + " " + surname + " " + lastname + " " + birthDay;
+    }
 }
