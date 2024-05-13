@@ -12,9 +12,8 @@ public class StudentWithClock implements Learner {
 
     @Override
     public void learn() {
-        Date localDateTime = new Date();
         SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss");
         learner.learn();
-        System.out.printf("Текущее время: %s", currentTime.format(localDateTime));
+        System.out.printf("Текущее время: %s", currentTime.format(new Date()));
     }
 }
